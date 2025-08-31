@@ -1,0 +1,172 @@
+@import url(null.css);
+
+body {
+  font-family: "Cormorant", serif;
+  min-height: 100%;
+  color: var(--Black);
+}
+
+:root {
+  --Black: #151618;
+  --White: #ffff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Обрізає вміст, який виходить за межі елемента, без відображення смуг прокрутки. Це схоже на overflow: hidden;, але без можливості прокрутки. */
+  overflow: clip;
+}
+/* властивість flex-row розтягує main завжди на всю висоту вьюпрту, тим самим притискає footer донизу екрану */
+.wrapper > main {
+  flex-grow: 1;
+  width: 100%; /* Додано для заповнення ширини */
+}
+
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+} */
+
+/* селектор атрибуту класу,  */
+[class*="__container"] {
+  /* розширили контейнер на величину паддінгів зліва иа справа */
+  max-width: 1200px;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+
+/* Header *******************************/
+
+.header__page {
+  padding: 30px 0;
+}
+
+.header__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 140px;
+}
+.menu__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 20px;
+}
+.menu__btn span {
+  background-color: #151618;
+  height: 2px;
+  width: 100%;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+  margin-left: 85px;
+}
+
+.menu__item {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__actions {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.actions__search {
+  margin-left: 80px;
+}
+
+/* Hero section *************************/
+
+.hero__page {
+  padding-top: 254px;
+  min-height: 500px;
+  background-image: url("../images/hero_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  color: var(--White);
+  max-width: 790px;
+  /* H1 Title 60px */
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1; /* 60px */
+  margin-bottom: 20px;
+}
+
+.hero__text {
+  color: var(--White);
+  max-width: 558px;
+  /* H3 Title 24px Light */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 48px;
+}
+
+/* Quete section **********************/
+
+.quete {
+  text-align: center;
+  max-width: 704px;
+  /* Quotation 40px Italic Light */
+  font-family: Cormorant;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+  margin: 150px auto;
+}
+
+@media screen and (max-width: 999.98px) {
+  .header__body {
+    min-height: 105px;
+  }
+  .header__menu {
+    margin-right: auto;
+  }
+  .menu__list {
+    margin-left: 60px;
+  }
+  .actions__search {
+    margin-left: 30px;
+  }
+  .quete {
+    margin: 135px auto 120px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .header__body {
+    min-height: 105px;
+  }
+  .header__menu {
+    margin-right: auto;
+  }
+  .menu__list {
+    margin-left: 60px;
+  }
+  .actions__search {
+    margin-left: 30px;
+  }
+  .quete {
+    margin: 135px auto 120px;
+  }
+}
