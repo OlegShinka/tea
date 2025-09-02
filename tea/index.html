@@ -20,15 +20,16 @@
         <div class="header__container">
           <div class="header__body">
             <a href="#" class="header__logo">
-              <img src="./images/Logo.svg" alt="logo" />
+              <img class="logo" src="./images/Logo.svg" alt="logo" />
             </a>
-            <button type="button" class="menu__btn">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+
             <nav class="header__menu menu">
+              <button type="button" class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
               <ul class="menu__list">
                 <li class="menu__item">
                   <a href="#" class="menu__link">Black</a>
@@ -66,6 +67,58 @@
             </ul>
           </div>
         </div>
+        <div class="header__mobile-menu header__mobile-menu--isOpen">
+          <div class="mobile-menu__btn-close" type="button">
+            <img src="./images/close.svg" alt="icon-close" />
+          </div>
+          <div class="mobile-menu__inner">
+            <ul class="mobile-menu__top top-menu">
+              <li class="top-menu__item">
+                <a href="" class="top-menu__link">Black</a>
+              </li>
+              <li class="top-menu__item">
+                <a href="" class="top-menu__link">Green</a>
+              </li>
+              <li class="top-menu__item">
+                <a href="" class="top-menu__link">White</a>
+              </li>
+              <li class="top-menu__item">
+                <a href="" class="top-menu__link">Oolong</a>
+              </li>
+              <li class="top-menu__item">
+                <a href="" class="top-menu__link">Pu-erh</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__bottom bootom-menu">
+              <li class="bottom-menu__item">
+                <a href="#" class="bottom-menu_link">Contact Us</a>
+              </li>
+              <li class="bottom-menu__item">
+                <a href="#" class="bottom-menu_link">Our Blog</a>
+              </li>
+              <li class="bottom-menu__item">
+                <a href="#" class="bottom-menu_link">Shipping and Delivery</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__actions actions-menu">
+              <li class="actions-menu__item">
+                <a href="#" class="actions-menu__link"
+                  ><img src="./images/buy.svg" alt="icon"
+                /></a>
+              </li>
+              <li class="actions-menu__item">
+                <a href="#" class="actions-menu__link"
+                  ><img src="./images/user.svg" alt="icon"
+                /></a>
+              </li>
+              <li class="actions-menu__item">
+                <a href="#" class="actions-menu__link"
+                  ><img src="./images/search.svg" alt="icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </header>
       <main class="main">
         <section class="hero__page">
@@ -92,5 +145,6 @@
       </main>
       <footer class="footer">fooo</footer>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
