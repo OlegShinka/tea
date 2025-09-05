@@ -195,7 +195,7 @@ body {
 .hero__page {
   padding-top: 254px;
   min-height: 500px;
-  background-image: url("../images/hero_bg.jpg");
+  background-image: url("/tea/images/hero_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -292,6 +292,7 @@ body {
   font-style: italic;
   font-weight: 300;
   line-height: normal;
+  margin-bottom: 10px;
 }
 .reviews_author {
   font-family: "Open Sans";
