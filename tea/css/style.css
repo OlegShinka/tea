@@ -195,7 +195,7 @@ body {
 .hero__page {
   padding-top: 254px;
   min-height: 500px;
-  background-image: url("/tea/images/hero_bg.jpg");
+  background-image: url("./tea/images/hero_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -365,6 +365,89 @@ body {
   padding: 12px 41px;
   margin: 0 auto;
   border: 1px solid #151618;
+}
+
+/* Subscribe section ******************************************/
+
+.subscribe {
+  padding: 60px 0;
+  background-color: #f7f2ea;
+}
+.title {
+}
+.subscribe__title {
+  text-align: start;
+}
+
+.subscribe__inner {
+  display: flex;
+  gap: 40px;
+}
+
+.subscribe__desc {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 580px;
+  text-align: left;
+}
+
+.subscribe__form {
+  max-width: 580px;
+}
+
+.subscribe__inp-email-body {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.subscribe__inp-email {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #f7f2ea;
+  border-bottom: 1px solid #b8b58b;
+  min-width: 400px;
+  padding: 3px 15px;
+}
+
+.subscribe__inp-email::placeholder {
+  color: #b8b58b;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.subscribe__inp-btn {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  margin-left: 25px;
+  padding: 12px 41px;
+  border: 1px solid var(--Black);
+  background-color: var(--White);
+}
+
+.subscribe__inp-checkbox-body {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.subscribe__inp-agree {
+}
+
+.inp-agree__desc {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: start;
 }
 
 /* ---------------Media ------------------------------- */
