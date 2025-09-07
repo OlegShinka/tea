@@ -195,7 +195,7 @@ body {
 .hero__page {
   padding-top: 254px;
   min-height: 500px;
-  background-image: url("./tea/images/hero_bg.jpg");
+  background-image: url("/hero_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -410,8 +410,18 @@ body {
   border-right: none;
   background-color: #f7f2ea;
   border-bottom: 1px solid #b8b58b;
+  outline: none;
   min-width: 400px;
   padding: 3px 15px;
+}
+
+input:focus {
+  outline: none;
+  color: #b8b58b;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 .subscribe__inp-email::placeholder {
