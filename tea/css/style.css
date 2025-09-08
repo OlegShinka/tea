@@ -46,6 +46,19 @@ body {
   margin-bottom: 60px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Header *******************************/
 
 .header__page {
@@ -382,6 +395,7 @@ body {
 .subscribe__inner {
   display: flex;
   gap: 40px;
+  flex-basis: 580px;
 }
 
 .subscribe__desc {
@@ -390,12 +404,15 @@ body {
   font-weight: 300;
   line-height: 1.5;
   text-align: center;
-  max-width: 580px;
+  /* max-width: 580px; */
   text-align: left;
 }
 
 .subscribe__form {
-  max-width: 580px;
+  /* max-width: 580px; */
+  /* flex-basis: 580px; */
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe__inp-email-body {
@@ -408,7 +425,7 @@ body {
   border-top: none;
   border-left: none;
   border-right: none;
-  background-color: #f7f2ea;
+  background-color: transparent;
   border-bottom: 1px solid #b8b58b;
   outline: none;
   min-width: 400px;
@@ -443,21 +460,50 @@ input:focus {
   background-color: var(--White);
 }
 
-.subscribe__inp-checkbox-body {
+.subscribe__checkbox-body {
+  /* position: relative; */
   display: flex;
+  flex-direction: row;
   gap: 10px;
-  align-items: flex-start;
+  justify-content: center;
+  justify-content: flex-start;
 }
 
-.subscribe__inp-agree {
+/* Стилізація кастомного чекбокса */
+.checkbox-label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid var(--Black);
+  border-radius: 4px; /* Додає закруглені кути */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.inp-agree__desc {
+/* приховали деф чекбокс */
+.subscribe__checkbox {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+/* Стан checked */
+.subscribe__checkbox:checked + .checkbox-label {
+  background-color: chocolate;
+  border-color: chocolate;
+  position: relative;
+}
+
+.checkbox__desc {
   font-family: "Open Sans";
   font-size: 13px;
   font-weight: 300;
   line-height: 1.2;
-  text-align: start;
+  text-align: center;
+  text-align: left; /* Вирівнювання тексту по лівому краю */
+  max-width: 450px; /* Обмеження ширини тексту */
 }
 
 /* ---------------Media ------------------------------- */
