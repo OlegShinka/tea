@@ -215,7 +215,7 @@ body {
 }
 
 .hero__title {
-  color: var(--White);
+  color: green;
   max-width: 790px;
   /* H1 Title 60px */
   font-size: 60px;
@@ -226,7 +226,7 @@ body {
 }
 
 .hero__text {
-  color: var(--White);
+  color: green;
   max-width: 558px;
   /* H3 Title 24px Light */
   font-size: 24px;
